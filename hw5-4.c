@@ -9,14 +9,13 @@ int main()
     c = a * 30 + b * 0.5;
     d = b * 6;
     e = c - d;
-    e = abs(e);
+    e = fabs(e);
 
     if (e >= 180 && e < 360) {
         e = e - 180;
     } else if (e >= 360) {
         e = e - 360;
     }
-
     printf("%.3f\n", e);
 
     return 0;
