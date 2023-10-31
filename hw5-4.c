@@ -12,9 +12,8 @@ int main()
     e = fabs(e);
 
     if (e >= 180 && e < 360) {
-        e = e - 180;
-    } else if (e >= 360) {
         e = e - 360;
+        e = fabs(e);
     }
     printf("%.3f\n", e);
 
